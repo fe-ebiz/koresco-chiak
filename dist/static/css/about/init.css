@@ -1,0 +1,31 @@
+.cont-intro h3 *, .cont-location h3 *, .cont-location .info h4 > * { display: inline-block; vertical-align: middle; }
+
+.cont-intro, .cont-location { padding: 20px 0; }
+
+.cont-intro h3, .cont-location h3 { font-size: 14px; color: #838383; border-bottom: 1px solid #cdcdcd; padding-bottom: 8px; margin-bottom: 18px; }
+.cont-intro h3 strong, .cont-location h3 strong { font-size: 32px; color: #004885; letter-spacing: 0; }
+.cont-intro h3 .s-1, .cont-location h3 .s-1 { position: relative; top: 4px; }
+.cont-intro h3 .s-1 .dot-l, .cont-location h3 .s-1 .dot-l { position: relative; width: 2px; height: 10px; top: -1px; text-indent: -9999px; background: #a9a9a9; background: #cbcbcb; margin: 0 10px; }
+
+.cont-intro .introArea .splitDiv { position: relative; float: left; }
+.cont-intro .introArea .splitDiv.left { width: 575px; }
+.cont-intro .introArea .splitDiv.left figure { box-sizing: border-box; }
+.cont-intro .introArea .splitDiv.left figure.halfDiv { float: left; width: 50%; margin-top: 16px; }
+.cont-intro .introArea .splitDiv.left figure.halfDiv.pr { padding-right: 8px; }
+.cont-intro .introArea .splitDiv.left figure.halfDiv.pl { padding-left: 8px; }
+.cont-intro .introArea .splitDiv.left figure img { box-sizing: border-box; border: 1px solid #cecece; }
+.cont-intro .introArea .splitDiv.right { width: 425px; box-sizing: border-box; padding-left: 30px; }
+.cont-intro .introArea .splitDiv.right p { font-size: 16px; line-height: 1.5; color: #5a5959; }
+.cont-intro .introArea .splitDiv.right .p-1 { font-size: 22px; color: #004885; line-height: 1.3; }
+.cont-intro .introArea .splitDiv.right .p-2 { margin-top: 20px; }
+.cont-intro .introArea .splitDiv.right .p-3 { margin-top: 30px; }
+
+.cont-location .info h4 { position: relative; margin-top: 25px; font-size: 16px; }
+.cont-location .info h4 strong { font-size: 22px; margin-right: 30px; }
+.cont-location .info h4 strong, .cont-location .info h4 .fg { color: #004885; }
+.cont-location .info h4 .s-1 { position: relative; top: -1px; }
+.cont-location .info h4 .link { margin-top: -5px; letter-spacing: 10px; }
+.cont-location .info .p-1 { margin-top: 10px; line-height: 1.5; }
+.cont-location .info .p-1 > * { display: block; }
+.cont-location .info .p-1 .s-h { font-size: 20px; color: #004885; }
+.cont-location .info .p-1 .s-d { font-size: 16px; padding-left: 18px; }

@@ -1,0 +1,14 @@
+.cont-facil .halfDiv dd .row { position: relative; padding-left: 12px; }
+.cont-facil .halfDiv dd .row::before { content: "-"; display: inline-block; position: absolute; left: 0; }
+
+.cont-facil { padding: 15px 0 50px; }
+.cont-facil .halfDiv { width: 50%; float: left; margin-top: 20px; box-sizing: border-box; }
+.cont-facil .halfDiv.left { padding-right: 20px; }
+.cont-facil .halfDiv.right { padding-left: 20px; }
+.cont-facil .halfDiv figure { width: 480px; height: 331px; overflow: hidden; }
+.cont-facil .halfDiv figure img { box-sizing: border-box; border: 1px solid #cecece; }
+.cont-facil .halfDiv figure + .row { margin-top: 15px; }
+.cont-facil .halfDiv dl > * { display: inline-block; }
+.cont-facil .halfDiv dt { font-size: 30px; color: #004885; padding-right: 20px; }
+.cont-facil .halfDiv dt .s-1 { display: block; font-size: 14px; color: #838383; }
+.cont-facil .halfDiv dd { line-height: 1.5; vertical-align: top; color: #5a5959; }
