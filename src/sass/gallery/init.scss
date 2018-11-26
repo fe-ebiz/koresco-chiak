@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+// common
+@import "../common";
+
+/*bxSlider 재정의*/
+.bx-controls {
+	display: block !important;
+}
+
+%cont-padding {
+	padding: 30px 0;
+}
+%cont-h3 {
+	font-size: 14px;
+	color: #838383;
+	border-bottom: 1px solid #cdcdcd;
+	padding-bottom: 5px;
+	margin-bottom: 18px;
+	* {
+		@extend %va-middle;
+	}
+	strong {
+		font-size: 32px;
+		color: $fg-blue-2;
+		letter-spacing: 0;
+	}
+	.s-1 {
+		position: relative;
+		top: 4px;
+		.dot-l {
+			position: relative;
+			width: 2px;
+			height: 10px;
+			top: -1px;
+			text-indent: -9999px;
+			background: #a9a9a9;
+			background: #cbcbcb;
+			margin: 0 10px;
+		}
+	}
+}
+%btn-type {
+	position: relative;
+	display: inline-block;
+	background: $bg-blue-2;
+	color: #fff;
+	font-size: 16px;
+	padding: 0px 18px;
+	line-height: 2.3;
+	& .rArrow::after {
+		border-color: #fff;
+		margin-right: -3px;
+	}
+	&.type-2 {
+		
+	}
+}
+%row-dot {
+	position: relative;
+	padding-left: 12px;
+	word-break: keep-all;
+	&::before {
+		content: "-";
+		display: inline-block;
+		position: absolute;
+		left: 0;
+	}
+	&.type-2 {
+		padding-left: 18px;
+		&::before{
+			content: "※";
+		}
+	}
+}
+.cont-gallery {
+	@extend %cont-padding;
+	color: $fg-black-2;
+	h3 {
+		@extend %cont-h3;
+		display: inline-block;
+	}
+	h4 {
+		margin-top: 30px;
+		font-size: 20px;
+		color: $fg-blue-3;
+	}
+	.split {
+		@extend %split;
+		&.left {
+			width: 424px;
+			line-height: $lh-2;
+			.p-1 {
+				
+			}
+			.infoTable {
+				th, td {
+					position: relative;
+				}
+				th {
+					vertical-align: top;
+					text-align: justify;
+				}
+				td {
+					padding-left: 8px;
+					letter-spacing: -0.5px;
+					.dot {
+						position: absolute;
+						left: 0;
+					}
+				}
+			}
+			.row-btn {
+				.btn-booking {
+					@extend %btn-type;
+					line-height: 2.5;
+					padding: 0 25px;
+					margin-top: 20px;
+				}
+			}
+		}
+		&.right {
+			width: 576px;	
+		}
+		.slider {
+			width: 100%;
+		}
+	}
+}
+/*객실공통 안내*/
+.cont-use {
+	@extend %cont-padding;
+	color: $fg-black-2;
+	h3 {
+		@extend %cont-h3;
+		padding-bottom: 10px;
+		margin-bottom: 0;
+	}
+	.split {
+		@extend %split;
+		&.left {
+			width: 465px;
+		}
+		&.right {
+			width: 535px;
+		}
+		h4 {
+			font-size: 20px;
+			color: $fg-blue-3;
+			margin-top: 20px;
+		}
+		.p-1 {
+			line-height: $lh-2;
+			@extend %row-dot;
+		}
+	}
+}

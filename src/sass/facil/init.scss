@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+// common
+@import "../common";
+
+%row-dot {
+	position: relative;
+	padding-left: 12px;
+	&::before {
+		content: "-";
+		display: inline-block;
+		position: absolute;
+		left: 0;
+	}
+}
+.cont-facil {
+	padding: 15px 0;
+	.half {
+		width: 50%;
+		float: left;
+		margin-top: 20px;
+		box-sizing: border-box;
+		&.left {
+			padding-right: 20px;
+		}
+		&.right {
+			padding-left: 20px;
+		}
+		figure {
+			width: 480px;
+			height: 331px;
+			overflow: hidden;
+			img {
+				box-sizing: border-box;
+				border: 1px solid $bor-gray-1;
+			}
+			& + .row {
+				margin-top: 15px;
+			}
+		}
+		dl > * {
+			display: inline-block;
+		}
+		dt {
+			font-size: 30px;
+			color: $fg-blue-2;
+			padding-right: 20px;
+			.s-1 {
+				display: block;
+				font-size: 14px;
+				color: $fg-black-3;
+			}
+		}
+		dd {
+			line-height: $lh-1;
+			vertical-align: top;
+			color: $fg-black-2;
+			.row {
+				@extend %row-dot;
+			}
+		}
+	}
+	
+}

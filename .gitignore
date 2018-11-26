@@ -5,7 +5,7 @@
 *.eot
 *.otf
 
-src/**
+src/bourbon/**
 .sass-cache/**
 
 #sftpFile, zipÆÄÀÏ

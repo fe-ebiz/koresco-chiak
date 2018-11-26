@@ -1,21 +1,48 @@
 @charset "UTF-8";
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; font-style: normal; vertical-align: baseline; }
+* { margin: 0; padding: 0; }
+
+/*html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}*/
+html, body, div, span, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, blockquote, p, address, pre, cite, form, fieldset, input, textarea, select, table, th, td, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { margin: 0; padding: 0; font-weight: normal; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 
-body { /* line-height: 1; */ }
+fieldset, img, abbr, acronym { border: 0 none; }
 
-ol, ul { list-style: none; }
+ol, ul, li { list-style: none; }
 
 blockquote, q { quotes: none; }
 
 blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
 
-table { border-collapse: collapse; border-spacing: 0; }
+table { border-collapse: collapse; border-spacing: 0; border: 0 none; width: 100%; letter-spacing: -0.2px; }
+
+caption, th, td { font-weight: normal; }
+
+address, caption, strong, em, cite { font-weight: normal; font-style: normal; }
+
+ins { text-decoration: none; }
+
+del { text-decoration: line-through; }
 
 fieldset, img { border: 0; }
 
-img, input, button, select, textarea { margin: 0; padding: 0; vertical-align: middle; }
+img, input, button, select, text-container { margin: 0; padding: 0; vertical-align: middle; }
 
 caption, th { text-align: left; }
 
@@ -32,9 +59,9 @@ a { text-decoration: none; color: inherit; }
 /* hidden_class */
 .hidden, .skip { width: 0; height: 0; margin: 0; padding: 0; overflow: hidden; line-height: 0; font-size: 0; visibility: hidden; position: absolute; left: 0; top: 0; }
 
-.clr:before, .clr:after, .cf:after { content: ""; display: table; }
+.clr:before, .clr:after, .cf:before, .cf:after { content: ""; display: table; }
 
-.clr:after, .cf:after { clear: both; }
+.clr:after, .cf:after { clear: both; *zoom: 1; }
 
 /* button */
 button[type=button] { cursor: pointer; }
