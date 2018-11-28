@@ -9,7 +9,8 @@ src/bourbon/**
 .sass-cache/**
 
 #sftpFile, zipÆÄÀÏ
-*.json
+# *.json
+package-lock.json
 *.zip
 
 # ImeageFile
