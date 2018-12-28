@@ -1,20 +1,6 @@
 @charset "utf-8";
 
-// reset
-@import "reset";
-// bourbon 믹스인
-@import "bourbon/bourbon";
-// Scss 변수(Variables: $)
-@import "parts/variables";
-// Scss 반복문(loop)
-@import "parts/loop";
-// Scss 믹스인(Mixins)
-@import "parts/mixins";
-
-@import url(http://cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css);
-//@import url(http://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
-@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
-@import url(http://static.go.co.kr/css/faq-v1.1.css);
+@import "parts/common";
 
 body {
 	font-family: $nnrSquare; 
@@ -108,27 +94,7 @@ $faq-color: #0086cd !important;
 .wrapper {
 	min-width: 1000px;
 }
-/*공통스타일*/
-%centerThis {
-	width: 1000px;
-	margin: 0 auto;
-}
-%clearfix {
-	&::after {
-		content: "";
-		display: block;
-		clear: both;
-		*zoom: 1;
-	}
-}
-%va-middle {
-	display: inline-block;
-	vertical-align: middle;
-}
-%split {
-	position: relative;
-	float: left;
-}
+
 .contents {
 	position: relative;
 	margin: 0 auto;
@@ -316,6 +282,9 @@ input[type=password] {
 				.s-1 {
 					color: $fg-red-1;
 					margin-right: 5px;
+				}
+				.mt {
+					margin-top: 5px;
 				}
 			}
 			small {
