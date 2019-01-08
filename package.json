@@ -9,7 +9,9 @@
   "devDependencies": {
     "gulp": "^3.8.10",
     "gulp-compass": "^2.1.0",
+    "gulp-sass": "^4.0.2",
     "gulp-connect-multi": "^1.0.8",
+    "browser-sync": "^2.26.3",
     "gulp-ejs": "^3.3.0",
     "gulp-file-include": "^2.0.1",
     "gulp-html-prettify": "0.0.1",
@@ -19,6 +21,6 @@
     "gulp-rename": "^1.2.0",
     "gulp-util": "^3.0.1",
     "gulp-watch": "^3.0.0",
-    "preen": "^1.2.0"
+    "preen": "^1.2.0",
   }
 }

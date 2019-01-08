@@ -11,18 +11,20 @@
  * [gulp-connect-multi] - 웹 서버
  */
 var del      = require('del'),
+	// jade     = require('gulp-jade'),
+	// compass  = require('gulp-compass'),
 	gulp     = require('gulp'),
 	gulpif   = require('gulp-if'),
 	rename   = require('gulp-rename'),
-//	jade     = require('gulp-jade'),
 	fileinclude = require('gulp-file-include'),
 	ejs      = require('gulp-ejs'),
-	compass  = require('gulp-compass'),
+	sass	 = require('gulp-sass'),
 	plumber  = require('gulp-plumber'),
 	watch    = require('gulp-watch'),
 	prettify = require('gulp-html-prettify'),
 	connect  = require('gulp-connect-multi')(),
 	preen		 = require('preen'),
+	browerSync = require('browser-sync').create(), // browser-sync 호출
 
 	// 환경설정 ./config.js
 	config   = require('./config')();
@@ -32,9 +34,17 @@ var del      = require('del'),
  */
 
 // 기본
-gulp.task('default', ['template', 'compass', 'js', 'connect', 'watch']);
+// gulp.task('default', ['template', 'sass', 'js', 'connect', 'watch']);
+gulp.task('default', ['browserSync', 'watch']);
 gulp.task('prepare', ['preen', 'bower:copy']);
 
+gulp.task('browserSync', ['template', 'sass', 'js'], function() {
+	return browerSync.init({
+		server: {
+			baseDir: './dist'
+		}
+	});
+});
 // 관찰
 gulp.task('watch', [], function(){
 	// HTML 템플릿 업무 관찰
@@ -43,7 +53,7 @@ gulp.task('watch', [], function(){
 	});
 	// Sass 업무 관찰
 	watch(config.sass.src, function() {
-		gulp.start('compass');
+		gulp.start('sass');
 	});
 	// Js 업무 관찰
 	watch(config.js.src, function() {
@@ -82,7 +92,8 @@ gulp.task('bower:copy', function() {
 });
 
 // 웹 서버
-gulp.task('connect', connect.server( config.sev ) );
+// gulp.task('connect', connect.server( config.sev ) );
+
 // HTML 템플릿(template)
 gulp.task('template', function(){
 	gulp.src(config.template.src)
@@ -94,7 +105,8 @@ gulp.task('template', function(){
 		}))
 		.pipe( prettify( config.htmlPrettify) )
 		.pipe( gulp.dest( config.template.dest ) )
-		.pipe( connect.reload() );
+		// .pipe( connect.reload() );
+		.pipe(browerSync.reload({stream: true}));
 });
 
 gulp.task('compass', function() {
@@ -106,12 +118,19 @@ gulp.task('compass', function() {
 			style: 'compact' // nested, expanded, compact, compressed
 		}) )
 		.pipe( gulp.dest( config.sass.dest ) )
-		.pipe( connect.reload() );
+		.pipe(browerSync.reload({stream: true}));
+});
+gulp.task('sass', function() {
+	gulp.src( config.sass.src )
+		.pipe( plumber() )
+		.pipe( sass().on('error', sass.logError))
+		.pipe( gulp.dest( config.sass.dest ) )
+		.pipe(browerSync.reload({stream: true}));
 });
 
 gulp.task('js', function(){
 	gulp.src(config.js.src)
 		.pipe( plumber() )
 		.pipe( gulp.dest(config.js.dest) )
-		.pipe( connect.reload() );
+		.pipe(browerSync.reload({stream: true}));
 });

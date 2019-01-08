@@ -3,17 +3,46 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 @import url(http://static.go.co.kr/css/faq-v1.1.css);
 /*공통스타일*/
-.cont-facil .half dd .row { position: relative; padding-left: 12px; }
-.cont-facil .half dd .row::before { content: "-"; display: inline-block; position: absolute; left: 0; }
+.cont-facil .half dd .row {
+  position: relative;
+  padding-left: 12px; }
+  .cont-facil .half dd .row::before {
+    content: "-";
+    display: inline-block;
+    position: absolute;
+    left: 0; }
 
-.cont-facil { padding: 15px 0; }
-.cont-facil .half { width: 50%; float: left; margin-top: 20px; box-sizing: border-box; }
-.cont-facil .half.left { padding-right: 20px; }
-.cont-facil .half.right { padding-left: 20px; }
-.cont-facil .half figure { width: 480px; height: 331px; overflow: hidden; }
-.cont-facil .half figure img { box-sizing: border-box; border: 1px solid #cecece; }
-.cont-facil .half figure + .row { margin-top: 15px; }
-.cont-facil .half dl > * { display: inline-block; }
-.cont-facil .half dt { font-size: 30px; color: #004885; padding-right: 20px; }
-.cont-facil .half dt .s-1 { display: block; font-size: 14px; color: #838383; }
-.cont-facil .half dd { line-height: 1.5; vertical-align: top; color: #5a5959; }
+.cont-facil {
+  padding: 15px 0; }
+  .cont-facil .half {
+    width: 50%;
+    float: left;
+    margin-top: 20px;
+    box-sizing: border-box; }
+    .cont-facil .half.left {
+      padding-right: 20px; }
+    .cont-facil .half.right {
+      padding-left: 20px; }
+    .cont-facil .half figure {
+      width: 480px;
+      height: 331px;
+      overflow: hidden; }
+      .cont-facil .half figure img {
+        box-sizing: border-box;
+        border: 1px solid #cecece; }
+      .cont-facil .half figure + .row {
+        margin-top: 15px; }
+    .cont-facil .half dl > * {
+      display: inline-block; }
+    .cont-facil .half dt {
+      font-size: 30px;
+      color: #004885;
+      padding-right: 20px; }
+      .cont-facil .half dt .s-1 {
+        display: block;
+        font-size: 14px;
+        color: #838383; }
+    .cont-facil .half dd {
+      line-height: 1.5;
+      vertical-align: top;
+      color: #5a5959; }

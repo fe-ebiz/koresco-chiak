@@ -1,13 +1,13 @@
 @charset "utf-8";
 
 // bourbon 믹스인
-@import "bourbon/bourbon";
+// @import "../bourbon/bourbon";
 // Scss 변수(Variables: $)
-@import "parts/variables";
+@import "./variables";
 // Scss 반복문(loop)
-@import "parts/loop";
+@import "./loop";
 // Scss 믹스인(Mixins)
-@import "parts/mixins";
+@import "./mixins";
 
 @import url(http://cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css);
 //@import url(http://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
