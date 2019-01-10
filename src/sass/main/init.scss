@@ -126,25 +126,19 @@
 		&.right {
 			width: 390px;
 			padding-left: 10px;
-			figure > img {
-				height: 100%;
-				max-width: none;
-				&.facil-1 {
+			figure {
+				img {
 					position: relative;
-					left: -60px;
+					height: 100%;
+					max-width: none;
+					&.facil-1 {
+						position: relative;
+						left: -60px;
+					}
 				}
 			}
 		}
-		.half {
-			width: 50%;
-			float: left;
-			box-sizing: border-box;
-			&.type-a {
-				padding-right: 10px;
-			}
-			&.type-b {
-				padding-left: 10px;
-			}
+		.half, .full {
 			.btn-detail {
 				@extend %btn-type;
 				position: absolute;
@@ -157,6 +151,22 @@
 				& + .row {
 					margin-top: 15px;
 				}
+			}
+		}
+		.full {
+			figure > img {
+				width: 100%;
+			}
+		}
+		.half {
+			width: 50%;
+			float: left;
+			box-sizing: border-box;
+			&.type-a {
+				padding-right: 10px;
+			}
+			&.type-b {
+				padding-left: 10px;
 			}
 		}
 	}	

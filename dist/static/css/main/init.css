@@ -60,7 +60,7 @@
       visibility: visible; }
 
 /*객실 / 부대시설 안내*/
-.cont-guide .split .half .btn-detail {
+.cont-guide .split .half .btn-detail, .cont-guide .split .full .btn-detail {
   position: relative;
   display: inline-block;
   background: #7eaace;
@@ -68,7 +68,7 @@
   font-size: 16px;
   padding: 0px 18px;
   line-height: 2.3; }
-  .cont-guide .split .half .btn-detail .rArrow::after {
+  .cont-guide .split .half .btn-detail .rArrow::after, .cont-guide .split .full .btn-detail .rArrow::after {
     border-color: #fff; }
 
 .cont-guide {
@@ -105,12 +105,24 @@
     .cont-guide .split.right {
       width: 390px;
       padding-left: 10px; }
-      .cont-guide .split.right figure > img {
+      .cont-guide .split.right figure img {
+        position: relative;
         height: 100%;
         max-width: none; }
-        .cont-guide .split.right figure > img.facil-1 {
+        .cont-guide .split.right figure img.facil-1 {
           position: relative;
           left: -60px; }
+    .cont-guide .split .half .btn-detail, .cont-guide .split .full .btn-detail {
+      position: absolute;
+      bottom: 0;
+      right: 0; }
+    .cont-guide .split .half figure, .cont-guide .split .full figure {
+      height: 200px;
+      overflow: hidden; }
+      .cont-guide .split .half figure + .row, .cont-guide .split .full figure + .row {
+        margin-top: 15px; }
+    .cont-guide .split .full figure > img {
+      width: 100%; }
     .cont-guide .split .half {
       width: 50%;
       float: left;
@@ -119,12 +131,3 @@
         padding-right: 10px; }
       .cont-guide .split .half.type-b {
         padding-left: 10px; }
-      .cont-guide .split .half .btn-detail {
-        position: absolute;
-        bottom: 0;
-        right: 0; }
-      .cont-guide .split .half figure {
-        height: 200px;
-        overflow: hidden; }
-        .cont-guide .split .half figure + .row {
-          margin-top: 15px; }
