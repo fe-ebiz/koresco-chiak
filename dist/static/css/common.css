@@ -369,7 +369,8 @@ figcaption {
 
 .contents {
   position: relative;
-  margin: 0 auto; }
+  margin: 0 auto;
+  min-height: 500px; }
 
 .group {
   position: relative; }

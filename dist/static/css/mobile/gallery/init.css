@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/*공통스타일*/
+.cont-gallery h3 *, .cont-use h3 * {
+  display: inline-block;
+  vertical-align: middle; }
+
+.footer {
+  margin-top: 20px; }
+
+/*bxSlider 재정의*/
+.bx-controls {
+  display: block !important; }
+
+.cont-gallery, .cont-use {
+  padding: 15px 0; }
+
+.cont-gallery h3, .cont-use h3 {
+  font-size: 11px;
+  color: #838383;
+  margin-bottom: 5px; }
+  .cont-gallery h3 strong, .cont-use h3 strong {
+    font-size: 15px;
+    color: #004885;
+    letter-spacing: 0; }
+  .cont-gallery h3 .s-1, .cont-use h3 .s-1 {
+    position: relative;
+    top: 1px; }
+    .cont-gallery h3 .s-1 .dot-l, .cont-use h3 .s-1 .dot-l {
+      position: relative;
+      width: 1px;
+      height: 8px;
+      top: -1px;
+      text-indent: -9999px;
+      background: #888;
+      margin: 0 5px; }
+
+.cont-gallery .split.split-2 .row-btn .btn-booking {
+  position: relative;
+  display: inline-block;
+  background: #7eaace;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  padding: 0px 15px;
+  line-height: 2.6; }
+  .cont-gallery .split.split-2 .row-btn .btn-booking .rArrow::after {
+    border-color: #fff;
+    width: 5px;
+    height: 5px;
+    top: -1px;
+    margin-right: -3px;
+    margin-left: 3px; }
+
+.cont-use .split .p-1.row-dot {
+  position: relative;
+  padding-left: 8px;
+  word-break: keep-all;
+  font-size: 12px; }
+  .cont-use .split .p-1.row-dot::before {
+    content: "-";
+    display: inline-block;
+    position: absolute;
+    left: 0; }
+  .cont-use .split .type-2.p-1.row-dot {
+    padding-left: 12px; }
+    .cont-use .split .type-2.p-1.row-dot::before {
+      content: "※"; }
+
+.cont-gallery {
+  color: #5a5959; }
+  .cont-gallery h4 {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #005eae; }
+  .cont-gallery .split {
+    position: relative; }
+    .cont-gallery .split.split-2 {
+      margin-top: 10px;
+      line-height: 1.6; }
+      .cont-gallery .split.split-2 .p-1 {
+        font-size: 12px; }
+      .cont-gallery .split.split-2 .infoTable th, .cont-gallery .split.split-2 .infoTable td {
+        position: relative;
+        font-size: 12px; }
+      .cont-gallery .split.split-2 .infoTable th {
+        vertical-align: top;
+        text-align: justify; }
+      .cont-gallery .split.split-2 .infoTable td {
+        padding-left: 8px;
+        letter-spacing: -0.5px; }
+        .cont-gallery .split.split-2 .infoTable td .dot {
+          position: absolute;
+          left: 0; }
+      .cont-gallery .split.split-2 .row-btn {
+        position: absolute;
+        right: 0;
+        top: 0; }
+        .cont-gallery .split.split-2 .row-btn .btn-booking {
+          line-height: 2.5; }
+    .cont-gallery .split .slide-container .bx-viewport {
+      box-sizing: border-box;
+      border: 1px solid #cecece !important; }
+    .cont-gallery .split .slide-container .slider {
+      width: 100%; }
+      .cont-gallery .split .slide-container .slider > li > img {
+        width: 100%; }
+
+/*객실공통 안내*/
+.cont-use {
+  color: #5a5959; }
+  .cont-use h3 {
+    margin-bottom: 0; }
+  .cont-use .split {
+    font-size: 12px; }
+    .cont-use .split h4 {
+      font-size: 14px;
+      color: #005eae;
+      margin-top: 10px; }
+    .cont-use .split .p-1 {
+      word-break: keep-all;
+      letter-spacing: -0.5px;
+      line-height: 1.6; }
+    .cont-use .split .p-2 {
+      font-size: 13px; }

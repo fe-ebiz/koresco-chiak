@@ -1,0 +1,46 @@
+@@include('../include/_head.html', {
+	"page": "booking"
+})
+
+	<!--페이지 전용 Css & Script-->
+	<!-- 예약페이지 별도 Css 가져오기 -->
+    <link rel="stylesheet" href="http://static.hotelgangneung.kr/css/moblie_reset.css" type="text/css">
+    <link rel="stylesheet" href="http://static.hotelgangneung.kr/css/mobile_layout3.css" type="text/css">
+	<link rel="stylesheet" href="http://static.go.co.kr/css/m/history/history_m.css">
+	<link rel="stylesheet" href="http://static.go.co.kr/css/totalmobile.css" type="text/css">
+	
+	<link rel="stylesheet" href="http://static.go.co.kr/css/swiper.min.css" type="text/css">
+	<script type="text/javascript" src="http://static.go.co.kr/js/swiper.min.js"></script>
+	
+</head>
+<body class="Booking">
+
+<div class="wrapper">
+	@@include('../include/_header.html')
+
+	<!-- 예약페이지 가져오기 , 아래 부분은 개발단에서 작업(아래는 예시)-->
+	<section class="history" id="setTop">
+		<div class="clr"></div>
+		<!--별도 고코 PC/모바일 예약하기 위치-->
+		<div id="wrapper">
+			<div id="scroll_box">
+				<div class="history01-list" id="order_layout" style="min-height:150px">
+					<div class="nb-wrap type02">
+						<div class="non-box">
+							<img src="http://img.go.co.kr/mobile/h_1.png" alt="느낌표">
+							<p class="p0">예약내역이 없습니다.</p>
+						</div>
+						<div class="non-btn-area"><a class="reserv" href="http://www.ramadapt.co.kr/reservation/">예약하러 가기</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="clr"></div>
+	<!--//-->
+
+	@@include('../include/_footer.html') 
+</div>
+
+</body>
+</html>

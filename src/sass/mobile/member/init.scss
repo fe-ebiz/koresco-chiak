@@ -1,0 +1,241 @@
+@charset "utf-8";
+
+// common
+@import "../parts/common";
+
+/*로그인페이지*/
+.login-outer {
+	position: relative;
+	padding: 15px 25px 35px;
+	width: 640px;
+	margin: 50px auto;
+	background: #fff;
+	border: 1px solid #dedede;
+	letter-spacing: -0.1px;
+	font-family: "Nanum Gothic", sans-serif;
+	&:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+	.login-box {
+		.naverLogin {
+			.h4 {
+				font-size: 18px;
+				color: #5a2400;
+				font-weight: 400;
+				margin-bottom: 25px;
+			}
+			.snsLarge {
+				margin: auto;
+				width: 268px;
+				ul {
+					margin: auto;
+					width: 268px;
+				}
+				li {
+					text-align: center;
+					letter-spacing: -0.3px;
+					font-weight: 600;
+					line-height: 55px;
+					font-size: 15px;
+					margin-bottom: 10px;
+					a {
+						position: relative;
+						display: block;
+						width: 268px;
+						height: 55px;
+						border-radius: 5px;
+						box-sizing: border-box;
+						img {
+							position: absolute;
+							top: 19px;
+							left: 19px;
+						}
+						span {
+							position: relative;
+							display: inline-block;
+							width: 210px;
+							float: right;
+							border-left: 1px solid;
+							text-align: center;
+							border-left: 1px solid rgba(0, 0, 0, .196);
+						}
+					}
+				}
+				li.daum {
+					a {
+						span {
+							width: 207px;
+						}
+					}
+				}
+				.naver {
+					a {
+						color: #fff;
+						background: #1ec800;
+						img {
+							width: 20px;
+						}
+					}
+				}
+				.kakao {
+					a {
+						color: #3b1e1e;
+						background: #ffeb00;
+						img {
+							top: 17px;
+							left: 17px;
+						}
+					}
+				}
+				.facebook {
+					a {
+						color: #fff;
+						background: #3b5998;
+						img {
+							width: 25px;
+							top: 13px;
+							left: 16px;
+						}
+					}
+				}
+				.daum {
+					a {
+						color: #4681bd;
+						border: 3px solid #4681bd;
+						line-height: 50px;
+						box-sizing: border-box;
+						img {
+							width: 25px;
+							top: 12px;
+							left: 15px;
+						}
+					}
+				}
+				.twitter {
+					a {
+						color: #fff;
+						background: #32ccfe;
+					}
+				}
+				.google {
+					a {
+						color: #fff;
+						background: #d34837;
+					}
+				}
+			}
+		}
+	}
+	.alert {
+		margin-top: 30px;
+		text-align: center;
+		.img {
+			margin: 0 auto;
+			width: 42px;
+			margin-bottom: 10px;
+		}
+		.text {
+			display: inline-block;
+			line-height: 18px;
+			font-size: 13px;
+		}
+	}
+}
+#beforeLogin {
+	float: left;
+	margin-top: 20px;
+	width: 100%;
+	letter-spacing: -0.8px;
+	h3 {
+		margin: 20px 0 10px 0;
+		font-weight: bold;
+		font-size: 1.000em;
+		line-height: 1;
+		color: #414141;
+		font-size: 16px;
+		img {
+			vertical-align: middle;
+			margin-right: 5px;
+		}
+	}
+	.tab {
+		float: left;
+		display: table;
+		margin-bottom: 10px;
+		width: 100%;
+		border-top: 1px solid #d2d2d2;
+		font-size: 0.938em;
+		img {
+			padding-top: 10px;
+		}
+		.memberOn {
+			display: table-cell;
+			width: 50%;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+		}
+		.memberOff {
+			display: table-cell;
+			width: 50%;
+			background: #f1f1f1;
+			border-bottom: 1px solid #d2d2d2;
+			border-left: 1px solid #d2d2d2;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			a {
+				display: table-cell;
+				width: 50%;
+				height: 40px;
+			}
+		}
+	}
+	.login_box {
+		margin: auto;
+		width: 268px;
+		.border {
+			border: 1px solid #d2d2d2;
+			input {
+				display: block;
+				width: 100%;
+				font-size: 12px;
+				border: 0;
+				text-indent: 5px;
+				outline: 0;
+			}
+		}
+		.btn_submit {
+			a {
+				height: 70px;
+				display: block;
+				cursor: pointer;
+				text-align: center;
+				background: #f15d28;
+				border: 1px solid #f15d28;
+				color: #fff;
+				font-weight: bold;
+				line-height: 4.4;
+				font-size: 16px;
+			}
+		}
+		.btn_find {
+			a {
+				display: block;
+				cursor: pointer;
+				height: 35px;
+				font-size: 14px;
+				text-align: center;
+				background: #b4b4b4;
+				color: #fff;
+				line-height: 2.5;
+			}
+		}
+		#checkbox2 {
+			font-weight: bold;
+			color: #414141;
+		}
+	}
+}

@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+// common
+@import "../parts/common";
+
+.footer {
+	margin-top: 20px;
+}
+/*bxSlider 재정의*/
+.bx-controls {
+	display: block !important;
+}
+
+%cont-padding {
+	padding: 15px 0;
+}
+%cont-h3 {
+	font-size: 11px;
+	color: #838383;
+	margin-bottom: 5px;
+	* {
+		@extend %va-middle;
+	}
+	strong {
+		font-size: 15px;
+		color: $fg-blue-2;
+		letter-spacing: 0;
+	}
+	.s-1 {
+		position: relative;
+		top: 1px;
+		.dot-l {
+			position: relative;
+			width: 1px;
+			height: 8px;
+			top: -1px;
+			text-indent: -9999px;
+			background: #888;
+			margin: 0 5px;
+		}
+	}
+}
+%btn-type {
+	position: relative;
+	display: inline-block;
+	background: $bg-blue-2;
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
+	padding: 0px 15px;
+	line-height: 2.6;
+	& .rArrow::after {
+		border-color: #fff;
+		width: 5px;
+		height: 5px;
+		top: -1px;
+		margin-right: -3px;
+		margin-left: 3px;
+	}
+}
+%row-dot {
+	position: relative;
+	padding-left: 8px;
+	word-break: keep-all;
+	font-size: 12px;
+	&::before {
+		content: "-";
+		display: inline-block;
+		position: absolute;
+		left: 0;
+	}
+	&.type-2 {
+		padding-left: 12px;
+		&::before{
+			content: "※";
+		}
+	}
+}
+.cont-gallery {
+	@extend %cont-padding;
+	color: $fg-black-2;
+	h3 {
+		@extend %cont-h3;
+	}
+	h4 {
+		margin-top: 12px;
+		font-size: 14px;
+		color: $fg-blue-3;
+	}
+	.split {
+		position: relative;
+		&.split-2 {
+			margin-top: 10px;
+			line-height: $lh-2;
+			.p-1 {
+				font-size: 12px;
+			}
+			.infoTable {
+				th, td {
+					position: relative;
+					font-size: 12px;
+				}
+				th {
+					vertical-align: top;
+					text-align: justify;
+				}
+				td {
+					padding-left: 8px;
+					letter-spacing: -0.5px;
+					.dot {
+						position: absolute;
+						left: 0;
+					}
+				}
+			}
+			.row-btn {
+				position: absolute;
+				right: 0;
+				top: 0;
+				.btn-booking {
+					@extend %btn-type;
+					line-height: 2.5;
+				}
+			}
+		}
+		.slide-container {
+			.bx-viewport {
+				box-sizing: border-box;
+				border: 1px solid $bor-gray-1 !important;
+			}
+			.slider {
+				width: 100%;
+				> li > img {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+/*객실공통 안내*/
+.cont-use {
+	@extend %cont-padding;
+	color: $fg-black-2;
+	h3 {
+		@extend %cont-h3;
+		margin-bottom: 0;
+	}
+	.split {
+		font-size: 12px;
+		h4 {
+			font-size: 14px;
+			color: $fg-blue-3;
+			margin-top: 10px;
+		}
+		.p-1 {
+			word-break: keep-all;
+			letter-spacing: -0.5px;
+			line-height: $lh-2;
+			&.row-dot {
+				@extend %row-dot;
+			}
+		}
+		.p-2 {
+			font-size: 13px;
+		}
+	}
+}
