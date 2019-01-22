@@ -35,3 +35,51 @@
 	position: relative;
 	float: left;
 }
+%weather-style-1 {
+	z-index: 99;
+	position: absolute;
+	width: 1180px;
+	top: 75px;
+	left: 50%;
+	margin-left: -600px;
+	.area {
+		position: absolute;
+		right: 5px;
+		height: 96px;
+		padding-left: 20px;
+		box-sizing: border-box;
+		[class*=s-] {
+			display: block;
+			color: #fff;
+			font-size: 20px;
+		}
+		.inner {
+			position: relative;
+			float: right;
+		}
+		img {
+			position: relative;
+			float: right;
+		}
+		.s-1 {
+			line-height: 1;
+		}
+		.s-2 {
+			margin-top: 3px;
+			font-weight: 700;
+			.t-1 {
+				position: relative;
+				top: -1px;
+			}
+		}
+		.s-3 {
+			font-size: 30px;
+			.big {
+				font-size: 44px;
+			}
+			.c {
+				font-family: "Noto Sans KR";
+			}
+		}
+	}
+}

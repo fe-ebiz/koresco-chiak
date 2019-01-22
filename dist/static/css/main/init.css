@@ -7,6 +7,44 @@
   display: inline-block;
   vertical-align: middle; }
 
+.cont-visual .visual .weather {
+  z-index: 99;
+  position: absolute;
+  width: 1180px;
+  top: 75px;
+  left: 50%;
+  margin-left: -600px; }
+  .cont-visual .visual .weather .area {
+    position: absolute;
+    right: 5px;
+    height: 96px;
+    padding-left: 20px;
+    box-sizing: border-box; }
+    .cont-visual .visual .weather .area [class*=s-] {
+      display: block;
+      color: #fff;
+      font-size: 20px; }
+    .cont-visual .visual .weather .area .inner {
+      position: relative;
+      float: right; }
+    .cont-visual .visual .weather .area img {
+      position: relative;
+      float: right; }
+    .cont-visual .visual .weather .area .s-1 {
+      line-height: 1; }
+    .cont-visual .visual .weather .area .s-2 {
+      margin-top: 3px;
+      font-weight: 700; }
+      .cont-visual .visual .weather .area .s-2 .t-1 {
+        position: relative;
+        top: -1px; }
+    .cont-visual .visual .weather .area .s-3 {
+      font-size: 30px; }
+      .cont-visual .visual .weather .area .s-3 .big {
+        font-size: 44px; }
+      .cont-visual .visual .weather .area .s-3 .c {
+        font-family: "Noto Sans KR"; }
+
 /* Scss 여러줄 주석 CSS 코드로 변경될 때, 해석됩니다. */
 /*----------------
 	콘텐츠 시작
