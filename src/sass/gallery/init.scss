@@ -18,7 +18,7 @@
 	padding-bottom: 5px;
 	margin-bottom: 18px;
 	* {
-		@extend %va-middle;
+		@include va;
 	}
 	strong {
 		font-size: 32px;
@@ -86,7 +86,7 @@
 		color: $fg-blue-3;
 	}
 	.split {
-		@extend %split;
+		@include split;
 		&.left {
 			width: 424px;
 			line-height: $lh-2;
@@ -137,7 +137,7 @@
 		margin-bottom: 0;
 	}
 	.split {
-		@extend %split;
+		@include split;
 		&.left {
 			width: 465px;
 		}

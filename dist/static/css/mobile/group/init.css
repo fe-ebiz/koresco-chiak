@@ -1,9 +1,4 @@
 @charset "UTF-8";
-/*공통스타일*/
-.Group .intro-sec .d-map img, .Group .room-sec .ul-list .li-item figure img {
-  box-sizing: border-box;
-  border: 1px solid #cecece; }
-
 .footer {
   margin-top: 30px; }
 
@@ -102,7 +97,9 @@
   margin: 12px auto; }
   .Group .intro-sec .d-map img {
     position: relative;
-    width: 100%; }
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #cecece; }
 
 .Group .intro-sec p {
   display: block;
@@ -166,7 +163,9 @@
       position: relative; }
       .Group .room-sec .ul-list .li-item figure img {
         position: relative;
-        width: 100%; }
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #cecece; }
     .Group .room-sec .ul-list .li-item > div {
       position: relative; }
     .Group .room-sec .ul-list .li-item .d-row-1 {

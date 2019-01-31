@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+@import "./variables";
+
 // 전달인자 설징이 없는 믹스인
 @mixin reset-box-model {
 	margin: 0;
@@ -43,4 +45,23 @@
 	.lt-ie8 & {
 		zoom: 1;
 	}
+}
+
+// 커스텀 믹스인
+@mixin centerThis($wth: 1000px) {
+	width: $wth;
+	margin: 0 auto;
+}
+@mixin va($type: middle) {
+	position: relative;
+	display: inline-block;
+	vertical-align: $type;
+}
+@mixin split($type: left) {
+	position: relative;
+	float: $type;
+}
+@mixin img-bor { 
+	box-sizing: border-box;
+	border: 1px solid $bor-gray-1;
 }

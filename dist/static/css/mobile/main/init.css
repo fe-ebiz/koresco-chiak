@@ -1,9 +1,4 @@
 @charset "UTF-8";
-/*공통스타일*/
-.cont-guide h3 * {
-  display: inline-block;
-  vertical-align: middle; }
-
 /* Scss 여러줄 주석 CSS 코드로 변경될 때, 해석됩니다. */
 /*----------------
 	콘텐츠 시작
@@ -30,6 +25,10 @@
   color: #838383;
   padding-top: 15px;
   margin-bottom: 5px; }
+  .cont-guide h3 * {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle; }
   .cont-guide h3 strong {
     font-size: 15px;
     color: #004885;

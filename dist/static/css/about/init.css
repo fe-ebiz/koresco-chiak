@@ -3,10 +3,6 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 @import url(http://static.go.co.kr/css/faq-v1.1.css);
 /*공통스타일*/
-.cont-intro h3 *, .cont-location h3 *, .cont-location .info h4 > * {
-  display: inline-block;
-  vertical-align: middle; }
-
 .cont-intro, .cont-location {
   padding: 20px 0; }
 
@@ -16,6 +12,10 @@
   border-bottom: 1px solid #cdcdcd;
   padding-bottom: 3px;
   margin-bottom: 18px; }
+  .cont-intro h3 *, .cont-location h3 * {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle; }
   .cont-intro h3 strong, .cont-location h3 strong {
     font-size: 32px;
     color: #004885;
@@ -72,6 +72,10 @@
   position: relative;
   margin-top: 25px;
   font-size: 16px; }
+  .cont-location .info h4 > * {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle; }
   .cont-location .info h4 strong {
     font-size: 22px;
     margin-right: 30px; }

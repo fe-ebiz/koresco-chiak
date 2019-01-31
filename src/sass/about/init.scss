@@ -13,7 +13,7 @@
 	padding-bottom: 3px;
 	margin-bottom: 18px;
 	* {
-		@extend %va-middle;
+		@include va;
 	}
 	strong {
 		font-size: 32px;
@@ -103,7 +103,7 @@
 			margin-top: 25px;
 			font-size: 16px;
 			> * {
-				@extend %va-middle;	
+				@include va;	
 			}
 			strong {
 				font-size: 22px;

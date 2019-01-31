@@ -112,13 +112,13 @@ $faq-color: #0086cd !important;
 }
 .group {
 	position: relative;
-	@extend %centerThis;
-	@extend %clearfix;
+	@include centerThis;
+	@include clearfix;
 }
 .row {
 	position: relative;
 	display: block;
-	@extend %clearfix;
+	@include clearfix;
 }
 hr.division {
 	border: 0;
@@ -180,7 +180,7 @@ input[type=password] {
 			padding-left: 10px;
 			letter-spacing: -0.7px;
 			.row > * {
-				@extend %va-middle;
+				@include va;
 			}
 			.dot-l {
 				width: 2px;

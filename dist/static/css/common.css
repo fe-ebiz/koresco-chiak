@@ -271,20 +271,6 @@ button[type=button] {
   display: none; }
 
 /*공통스타일*/
-.group {
-  width: 1000px;
-  margin: 0 auto; }
-
-.group::after, .row::after {
-  content: "";
-  display: block;
-  clear: both;
-  *zoom: 1; }
-
-.contents .cont-subVisual h2 .row > * {
-  display: inline-block;
-  vertical-align: middle; }
-
 body {
   font-family: "NanumSquareRound", Dotum, Sans-serif;
   line-height: 1.3;
@@ -372,11 +358,27 @@ figcaption {
   margin: 0 auto; }
 
 .group {
-  position: relative; }
+  position: relative;
+  width: 1000px;
+  margin: 0 auto; }
+  .group::before, .group::after {
+    content: '';
+    display: table; }
+  .group::after {
+    clear: both; }
+  .lt-ie8 .group {
+    zoom: 1; }
 
 .row {
   position: relative;
   display: block; }
+  .row::before, .row::after {
+    content: '';
+    display: table; }
+  .row::after {
+    clear: both; }
+  .lt-ie8 .row {
+    zoom: 1; }
 
 hr.division {
   border: 0;
@@ -435,6 +437,10 @@ input[type=password] {
   background: url(http://design.autopay.co.kr/joon/koresco-chiak/common/subVisual.jpg) no-repeat center; }
   .contents .cont-subVisual h2 {
     letter-spacing: -0.7px; }
+    .contents .cont-subVisual h2 .row > * {
+      position: relative;
+      display: inline-block;
+      vertical-align: middle; }
     .contents .cont-subVisual h2 .dot-l {
       width: 3px;
       height: 32px;

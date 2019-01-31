@@ -121,7 +121,7 @@
 			img {
 				position: relative;
 				width: 100%;
-				@extend %img-bor;
+				@include img-bor;
 			}
 		}
 		p {
@@ -196,7 +196,7 @@
 					img {
 						position: relative;
 						width: 100%;
-						@extend %img-bor;
+						@include img-bor;
 					}
 				}
 				>div {

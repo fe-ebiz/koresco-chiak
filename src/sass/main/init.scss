@@ -70,7 +70,7 @@
 			}
 		}
 		.weather {
-			@extend %weather-style-1;
+			@include weather-style-1;
 		}
 	}
 } 
@@ -96,7 +96,7 @@
 		padding-bottom: 8px;
 		margin-bottom: 18px;
 		* {
-			@extend %va-middle;
+			@include va;
 		}
 		strong {
 			font-size: 24px;

@@ -14,7 +14,7 @@
 	color: #838383;
 	margin-bottom: 8px;
 	* {
-		@extend %va-middle;
+		@include va;
 	}
 	strong {
 		font-size: 15px;
