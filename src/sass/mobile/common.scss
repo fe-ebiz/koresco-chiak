@@ -224,9 +224,11 @@ input[type=password] {
 		box-sizing: border-box;
 		.logo {
 			float: left;
-			width: 122px;
+			// width: 122px;
+			width: 165px;
 			position: relative;
-			line-height: 42px;
+			// line-height: 42px;
+			line-height: 44px;
 			img {
 				vertical-align: middle;
 			}
@@ -411,7 +413,8 @@ input[type=password] {
 			.logo-f {
 				display: inline-block;
 				margin-right: 15px;
-				width: 110px;
+				// width: 110px;
+				width: 165px;
 			}
 			.address {
 				margin-top: 5px;

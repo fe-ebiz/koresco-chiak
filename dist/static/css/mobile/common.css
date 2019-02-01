@@ -480,9 +480,9 @@ input[type=password] {
     box-sizing: border-box; }
     .header .cont-header .logo {
       float: left;
-      width: 122px;
+      width: 165px;
       position: relative;
-      line-height: 42px; }
+      line-height: 44px; }
       .header .cont-header .logo img {
         vertical-align: middle; }
     .header .cont-header .btn-evtFaq {
@@ -635,7 +635,7 @@ input[type=password] {
     .footer .split.split-2 .logo-f {
       display: inline-block;
       margin-right: 15px;
-      width: 110px; }
+      width: 165px; }
     .footer .split.split-2 .address {
       margin-top: 5px;
       line-height: 1.6; }
