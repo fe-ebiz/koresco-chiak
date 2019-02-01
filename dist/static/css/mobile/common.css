@@ -361,7 +361,7 @@ figcaption {
 
 .group {
   position: relative;
-  width: 1000px;
+  width: 96%;
   margin: 0 auto; }
   .group::before, .group::after {
     content: '';

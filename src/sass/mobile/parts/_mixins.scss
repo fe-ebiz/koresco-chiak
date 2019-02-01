@@ -48,7 +48,7 @@
 }
 
 // 커스텀 믹스인
-@mixin centerThis($wth: 1000px) {
+@mixin centerThis($wth: 96%) {
 	width: $wth;
 	margin: 0 auto;
 }
