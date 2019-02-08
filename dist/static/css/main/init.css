@@ -39,7 +39,8 @@
         .cont-visual .visual .slide figure figcaption .p-1 {
           font-size: 26px; }
         .cont-visual .visual .slide figure figcaption .p-2 {
-          font-size: 60px; }
+          font-size: 60px;
+          letter-spacing: -2px; }
         .cont-visual .visual .slide figure figcaption .p-3 {
           font-size: 21px;
           margin-top: 20px; }

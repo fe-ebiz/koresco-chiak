@@ -77,7 +77,8 @@
         .cont-visual .visual .slide figure .txt-box .p-1 {
           font-size: 14px; }
         .cont-visual .visual .slide figure .txt-box .p-2 {
-          font-size: 27px; }
+          font-size: 25px;
+          letter-spacing: -2px; }
         .cont-visual .visual .slide figure .txt-box .p-3 {
           font-size: 11px;
           margin-top: 8px; }
