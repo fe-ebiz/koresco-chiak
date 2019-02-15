@@ -566,11 +566,32 @@ input[type=password] {
         .header .cont-header .gnb .menu > li {
           position: relative; }
           .header .cont-header .gnb .menu > li.item-0 {
-            background: #005aa7;
+            background: #618eb4;
             padding: 12px; }
             .header .cont-header .gnb .menu > li.item-0 .logo-menu {
               position: relative;
               width: 96px; }
+            .header .cont-header .gnb .menu > li.item-0 .menu-btn-box {
+              margin-top: 10px; }
+              .header .cont-header .gnb .menu > li.item-0 .menu-btn-box::before, .header .cont-header .gnb .menu > li.item-0 .menu-btn-box::after {
+                content: '';
+                display: table; }
+              .header .cont-header .gnb .menu > li.item-0 .menu-btn-box::after {
+                clear: both; }
+              .lt-ie8 .header .cont-header .gnb .menu > li.item-0 .menu-btn-box {
+                zoom: 1; }
+              .header .cont-header .gnb .menu > li.item-0 .menu-btn-box a {
+                display: block;
+                float: right;
+                width: 48%;
+                font-size: 13px;
+                font-weight: 600;
+                text-align: center;
+                line-height: 28px;
+                color: #416b8e;
+                background: #fff; }
+                .header .cont-header .gnb .menu > li.item-0 .menu-btn-box a:first-child {
+                  float: left; }
           .header .cont-header .gnb .menu > li > a {
             display: block;
             padding: 10px 12px;
@@ -578,8 +599,8 @@ input[type=password] {
             border-bottom: 1px solid #d2d2d2; }
         .header .cont-header .gnb .menu .i-x {
           right: 0;
-          top: 0;
-          height: 100%;
+          top: 16px;
+          /*height: 100%;*/
           width: 40px; }
           .header .cont-header .gnb .menu .i-x:before, .header .cont-header .gnb .menu .i-x:after {
             background: #fff;

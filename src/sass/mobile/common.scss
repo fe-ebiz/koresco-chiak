@@ -322,12 +322,31 @@ input[type=password] {
 				> li {
 					position: relative;
 					&.item-0 {
-						background: $bg-blue-3;
+						background: $bg-blue-4;
 						padding: 12px;
 						.logo-menu {
 							position: relative;
 							width: 96px;
 						}
+                        //190215
+                        .menu-btn-box {
+                            @include clearfix;
+                            margin-top: 10px;
+                            a {
+                                display: block;
+                                float: right;
+                                width: 48%;
+                                font-size: 13px;
+                                font-weight: 600;
+                                text-align: center;
+                                line-height: 28px;
+                                color: $fg-blue-4;
+                                background: #fff;
+                                &:first-child {
+                                    float: left;
+                                }
+                            }
+                        }
 					}
 					> a {
 						display: block;
@@ -338,8 +357,8 @@ input[type=password] {
 				}
 				.i-x {
 					right: 0;
-					top: 0;
-					height: 100%;
+					top: 16px;
+					/*height: 100%;*/
 					width: 40px;
 					&:before, &:after {
 						background: #fff;
