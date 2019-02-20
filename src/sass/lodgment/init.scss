@@ -1,0 +1,298 @@
+@charset "utf-8";
+
+// common
+@import "../parts/common";
+
+// Scss 한줄 주석
+// css 코드로 변경될 때, 해석되지 않습니다.
+/* Scss 여러줄 주석 CSS 코드로 변경될 때, 해석됩니다. */
+
+/*----------------
+	콘텐츠 시작
+------------------*/
+
+.contents {
+    .cont-subVisual {
+        * {
+            font-family: "NanumSquareRound", Dotum, Sans-serif;
+            line-height: 1.3;
+        }
+    }
+    
+    /* 장기/단기 숙박 */
+    .cont-lg {
+        padding-top: 10px;
+        .group {
+            div[class*='lg-img'] {
+                figure {
+                    position: relative;
+                }
+
+                /* 더 자세한 객실정보 보기 링크버튼 */
+                .btn-linkOc2 {
+                    position: absolute;
+                    display: block;
+                    width: 322px;
+                    height: 56px;
+                    bottom: 55px;
+                    left: 50%;
+                    margin-left: -161px;
+                    font-size: 23px;
+                    font-weight: 600;
+                    line-height: 56px;
+                    letter-spacing: -0.5px;
+                    text-align: center;
+                    color: #fff;
+                    border-radius: 26px;
+                    background: #168a91;
+                }
+
+            }
+
+            #rsv_wrapper {
+                float: none;
+                position: relative;
+                box-sizing: border-box;
+                width: 100%;
+                margin-top: 0;
+                margin-left: 0;
+                margin: 0 auto;
+                padding: 34px 48px 55px;
+                background: #d4f2ef;
+                #rsv_sang {
+                    #rsv_s_list_box2 {
+                        float: none;
+                        width: 100%;
+                        border-bottom: 1px solid $bor-gray-2;
+                        #rsv_s_list {
+                            width: 100%;
+                            font-size: 16px;
+                            line-height: 26px;
+                            color: #323131;
+                            border-top: 1px solid $bor-gray-2;
+                            background: #fff;
+                            colgroup {
+                                .nth-1 {
+                                    width: 25%;
+                                }
+                                .nth-2 {
+                                    width: 15%;
+                                }
+                                .nth-3 {
+                                    width: 25%;
+                                }
+                                .nth-4 {
+                                    width: 35%;
+                                }
+                            }
+                            tr {
+                                td {
+                                    border-left: 1px solid $bor-gray-2;
+                                    &.fc-point {
+                                        span {
+                                            display: block;
+                                            font-size: 20px; 
+                                            font-weight: 800; 
+                                            color: #ff0000;
+                                        }
+                                    }
+                                    &.pd-t {
+                                        padding-top: 7px;
+                                    }
+                                    &.pd-b {
+                                        padding-bottom: 7px;
+                                    }
+
+                                    &.fc-bd {
+                                        p {
+                                            font-size: 20px;
+                                            font-weight: 800;
+                                            letter-spacing: -0.5px;
+                                        }
+                                    }
+                                }
+                            }
+                            /* th 영역 */
+                            .t-th {
+                                height: 40px;
+                                font-weight: 500;
+                                text-align: center;
+                                color: #000;
+                                border-bottom: 1px solid $bor-gray-2;
+                                border-left: 0;
+                                background: #dadada;
+                                td {
+                                    border-left: 0;
+                                }
+                            }
+
+                            /* td first */
+                            .fir td:first-child {
+                                border-left: 0;
+                            }
+
+                            /* 예상요금 */
+                            &.table-type2 {
+                                colgroup {
+                                    .nth-1 {
+                                        width: 15%;
+                                    }
+                                    .nth-2 {
+                                        width: 25%;
+                                    }
+                                    .nth-3 {
+                                        width: 60%;
+                                    }
+                                }
+
+                                .rsv-stay-area {
+                                    @include clearfix;
+                                    padding: 20px 0 20px;
+
+                                    /* 예상 체류기간 */
+                                    .stay-call-box {
+                                        .rsb-stay-list {
+                                            li {
+                                                display: table;
+                                                margin: 0 auto;
+                                                margin-top: 3px;
+
+                                                %table-form-style {
+                                                    display: table-cell;
+                                                    box-sizing: border-box;
+                                                    height: 27px;
+                                                    line-height: 27px;
+                                                    vertical-align: middle;
+                                                }
+                                                .lbl {
+                                                    @extend %table-form-style;
+                                                    width: 66px;
+                                                    text-align: left;
+                                                }
+                                                .type-1 {
+                                                    @extend %table-form-style;
+                                                    width: 124px;
+                                                    font-size: 15px;
+                                                    padding: 0 8px;
+                                                    border: 1px solid #bcbcbc;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    /* 예상 요금 */
+                                    .stay-count-box {
+                                        float: left;
+                                        margin: 0 15px;
+                                        .single-prc {
+                                            position: relative;
+                                            box-sizing: border-box;
+                                            width: 205px;
+                                            padding: 10px 15px;
+                                            border: 1px solid #d7d7d7;
+                                            background: #f2f2f2;
+
+                                            .p-row {
+                                                font-size: 15px;
+                                                letter-spacing: -0.5px;
+
+                                                .pull-left {
+                                                    color: #414141;
+                                                }
+                                                .pull-right {
+                                                    text-align: right;
+                                                    font-weight: 600;
+                                                    color: #ff4445;
+                                                }
+                                            }
+
+                                            //표준요금 위 보더
+                                            .mt-bar {
+                                                display: block;
+                                                width: 100%;
+                                                height: 1px;
+                                                margin: 5px auto;
+                                                background: #bcbcbc;
+                                            }
+                                        }
+                                    }
+
+                                    /* 예상 체류기간 버튼박스 */
+                                    .btn-box {
+                                        .btn_call {
+                                            margin-top: 9px;
+                                            padding-left: 66px;
+                                            a {
+                                                width: 124px;
+                                                border-radius: 6px;
+                                            }
+                                        }
+                                    }
+
+
+                                    &.type-2 {
+                                        .stay-call-box {
+                                            float: left;
+
+                                            .fc-point {
+                                                text-align: left;
+                                                letter-spacing: -1.2px;
+                                                color: #ff0000;
+                                            }
+                                            .btn_call {
+                                                margin-top: 13px;
+                                                text-align: left;
+                                                a {
+                                                    display: inline-block;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                #title {
+                    padding-top: 25px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+
+/* ie8 */
+.ie8 .contents {
+    .group {
+        #rsv_wrapper {
+            #rsv_sang {
+                #rsv_s_list_box2 {
+                    #rsv_s_list {
+                        
+                        /* 예상요금 */
+                        &.table-type2 {
+                            .rsv-stay-area {
+                                &.type-2 {
+                                    .stay-call-box {
+                                        .rsb-stay-list {
+                                            li {
+                                                .type-1 {
+                                                    line-height: 1;
+                                                    padding-top: 5px;
+                                                    padding-bottom: 5px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

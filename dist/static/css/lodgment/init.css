@@ -1,0 +1,184 @@
+@charset "UTF-8";
+@import url(http://cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(http://static.go.co.kr/css/faq-v1.1.css);
+/*공통스타일*/
+/* Scss 여러줄 주석 CSS 코드로 변경될 때, 해석됩니다. */
+/*----------------
+	콘텐츠 시작
+------------------*/
+.contents {
+  /* 장기/단기 숙박 */ }
+  .contents .cont-subVisual * {
+    font-family: "NanumSquareRound", Dotum, Sans-serif;
+    line-height: 1.3; }
+  .contents .cont-lg {
+    padding-top: 10px; }
+    .contents .cont-lg .group div[class*='lg-img'] {
+      /* 더 자세한 객실정보 보기 링크버튼 */ }
+      .contents .cont-lg .group div[class*='lg-img'] figure {
+        position: relative; }
+      .contents .cont-lg .group div[class*='lg-img'] .btn-linkOc2 {
+        position: absolute;
+        display: block;
+        width: 322px;
+        height: 56px;
+        bottom: 55px;
+        left: 50%;
+        margin-left: -161px;
+        font-size: 23px;
+        font-weight: 600;
+        line-height: 56px;
+        letter-spacing: -0.5px;
+        text-align: center;
+        color: #fff;
+        border-radius: 26px;
+        background: #168a91; }
+    .contents .cont-lg .group #rsv_wrapper {
+      float: none;
+      position: relative;
+      box-sizing: border-box;
+      width: 100%;
+      margin-top: 0;
+      margin-left: 0;
+      margin: 0 auto;
+      padding: 34px 48px 55px;
+      background: #d4f2ef; }
+      .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 {
+        float: none;
+        width: 100%;
+        border-bottom: 1px solid #989898; }
+        .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list {
+          width: 100%;
+          font-size: 16px;
+          line-height: 26px;
+          color: #323131;
+          border-top: 1px solid #989898;
+          background: #fff;
+          /* th 영역 */
+          /* td first */
+          /* 예상요금 */ }
+          .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list colgroup .nth-1 {
+            width: 25%; }
+          .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list colgroup .nth-2 {
+            width: 15%; }
+          .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list colgroup .nth-3 {
+            width: 25%; }
+          .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list colgroup .nth-4 {
+            width: 35%; }
+          .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list tr td {
+            border-left: 1px solid #989898; }
+            .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list tr td.fc-point span {
+              display: block;
+              font-size: 20px;
+              font-weight: 800;
+              color: #ff0000; }
+            .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list tr td.pd-t {
+              padding-top: 7px; }
+            .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list tr td.pd-b {
+              padding-bottom: 7px; }
+            .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list tr td.fc-bd p {
+              font-size: 20px;
+              font-weight: 800;
+              letter-spacing: -0.5px; }
+          .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list .t-th {
+            height: 40px;
+            font-weight: 500;
+            text-align: center;
+            color: #000;
+            border-bottom: 1px solid #989898;
+            border-left: 0;
+            background: #dadada; }
+            .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list .t-th td {
+              border-left: 0; }
+          .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list .fir td:first-child {
+            border-left: 0; }
+          .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list.table-type2 colgroup .nth-1 {
+            width: 15%; }
+          .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list.table-type2 colgroup .nth-2 {
+            width: 25%; }
+          .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list.table-type2 colgroup .nth-3 {
+            width: 60%; }
+          .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list.table-type2 .rsv-stay-area {
+            padding: 20px 0 20px;
+            /* 예상 체류기간 */
+            /* 예상 요금 */
+            /* 예상 체류기간 버튼박스 */ }
+            .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list.table-type2 .rsv-stay-area::before, .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list.table-type2 .rsv-stay-area::after {
+              content: '';
+              display: table; }
+            .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list.table-type2 .rsv-stay-area::after {
+              clear: both; }
+            .lt-ie8 .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list.table-type2 .rsv-stay-area {
+              zoom: 1; }
+            .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list.table-type2 .rsv-stay-area .stay-call-box .rsb-stay-list li {
+              display: table;
+              margin: 0 auto;
+              margin-top: 3px; }
+              .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list.table-type2 .rsv-stay-area .stay-call-box .rsb-stay-list li .lbl, .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list.table-type2 .rsv-stay-area .stay-call-box .rsb-stay-list li .type-1 {
+                display: table-cell;
+                box-sizing: border-box;
+                height: 27px;
+                line-height: 27px;
+                vertical-align: middle; }
+              .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list.table-type2 .rsv-stay-area .stay-call-box .rsb-stay-list li .lbl {
+                width: 66px;
+                text-align: left; }
+              .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list.table-type2 .rsv-stay-area .stay-call-box .rsb-stay-list li .type-1 {
+                width: 124px;
+                font-size: 15px;
+                padding: 0 8px;
+                border: 1px solid #bcbcbc; }
+            .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list.table-type2 .rsv-stay-area .stay-count-box {
+              float: left;
+              margin: 0 15px; }
+              .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list.table-type2 .rsv-stay-area .stay-count-box .single-prc {
+                position: relative;
+                box-sizing: border-box;
+                width: 205px;
+                padding: 10px 15px;
+                border: 1px solid #d7d7d7;
+                background: #f2f2f2; }
+                .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list.table-type2 .rsv-stay-area .stay-count-box .single-prc .p-row {
+                  font-size: 15px;
+                  letter-spacing: -0.5px; }
+                  .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list.table-type2 .rsv-stay-area .stay-count-box .single-prc .p-row .pull-left {
+                    color: #414141; }
+                  .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list.table-type2 .rsv-stay-area .stay-count-box .single-prc .p-row .pull-right {
+                    text-align: right;
+                    font-weight: 600;
+                    color: #ff4445; }
+                .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list.table-type2 .rsv-stay-area .stay-count-box .single-prc .mt-bar {
+                  display: block;
+                  width: 100%;
+                  height: 1px;
+                  margin: 5px auto;
+                  background: #bcbcbc; }
+            .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list.table-type2 .rsv-stay-area .btn-box .btn_call {
+              margin-top: 9px;
+              padding-left: 66px; }
+              .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list.table-type2 .rsv-stay-area .btn-box .btn_call a {
+                width: 124px;
+                border-radius: 6px; }
+            .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list.table-type2 .rsv-stay-area.type-2 .stay-call-box {
+              float: left; }
+              .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list.table-type2 .rsv-stay-area.type-2 .stay-call-box .fc-point {
+                text-align: left;
+                letter-spacing: -1.2px;
+                color: #ff0000; }
+              .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list.table-type2 .rsv-stay-area.type-2 .stay-call-box .btn_call {
+                margin-top: 13px;
+                text-align: left; }
+                .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list.table-type2 .rsv-stay-area.type-2 .stay-call-box .btn_call a {
+                  display: inline-block; }
+      .contents .cont-lg .group #rsv_wrapper #title {
+        padding-top: 25px;
+        text-align: center; }
+
+/* ie8 */
+.ie8 .contents .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list {
+  /* 예상요금 */ }
+  .ie8 .contents .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list.table-type2 .rsv-stay-area.type-2 .stay-call-box .rsb-stay-list li .type-1 {
+    line-height: 1;
+    padding-top: 5px;
+    padding-bottom: 5px; }
