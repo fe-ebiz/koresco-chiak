@@ -99,6 +99,9 @@
             width: 25%; }
           .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list.table-type2 colgroup .nth-3 {
             width: 60%; }
+          .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list.table-type2 .stay-chk {
+            display: inline-block;
+            text-align: left; }
           .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list.table-type2 .rsv-stay-area {
             padding: 20px 0 20px;
             /* 예상 체류기간 */

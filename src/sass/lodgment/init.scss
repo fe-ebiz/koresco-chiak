@@ -144,6 +144,11 @@
                                         width: 60%;
                                     }
                                 }
+                                
+                                .stay-chk {
+                                    display: inline-block;
+                                    text-align: left;
+                                }
 
                                 .rsv-stay-area {
                                     @include clearfix;
