@@ -129,6 +129,8 @@
                 font-size: 15px;
                 padding: 0 8px;
                 border: 1px solid #bcbcbc; }
+                .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list.table-type2 .rsv-stay-area .stay-call-box .rsb-stay-list li .type-1.sel-type {
+                  padding-left: 5px; }
             .contents .cont-lg .group #rsv_wrapper #rsv_sang #rsv_s_list_box2 #rsv_s_list.table-type2 .rsv-stay-area .stay-count-box {
               float: left;
               margin: 0 15px; }

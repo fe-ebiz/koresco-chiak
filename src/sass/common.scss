@@ -208,6 +208,10 @@ input[type=password] {
 			position: absolute;
             top: 15px;
 			left: 32px;
+            z-index: 9;
+            > a {
+                display: block;
+            }
 		}
 		.gnb {
 			position: relative;

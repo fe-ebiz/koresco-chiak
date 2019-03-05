@@ -469,7 +469,10 @@ input[type=password] {
     .header .cont-header .logo {
       position: absolute;
       top: 15px;
-      left: 32px; }
+      left: 32px;
+      z-index: 9; }
+      .header .cont-header .logo > a {
+        display: block; }
     .header .cont-header .gnb {
       position: relative;
       display: block;
