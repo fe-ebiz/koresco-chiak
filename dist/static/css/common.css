@@ -428,41 +428,43 @@ input[type=password] {
 
 /*----------------------------------------------------------------------*/
 /*공통 서브비쥬얼*/
-.contents .cont-subVisual {
-  margin-bottom: 20px;
-  padding-top: 70px;
-  box-sizing: border-box;
-  color: #fff;
-  height: 166px;
-  background: url(http://design.autopay.co.kr/joon/koresco-chiak/common/subVisual.jpg) no-repeat center; }
-  .contents .cont-subVisual h2 {
-    letter-spacing: -0.7px; }
-    .contents .cont-subVisual h2 .row > * {
-      position: relative;
-      display: inline-block;
-      vertical-align: middle; }
-    .contents .cont-subVisual h2 .dot-l {
-      width: 3px;
-      height: 32px;
-      margin-right: 12px;
-      background: #fff; }
-    .contents .cont-subVisual h2 strong {
-      font-size: 34px;
-      font-weight: 700; }
-    .contents .cont-subVisual h2 .s-1 {
-      font-size: 14px;
-      padding-left: 17px; }
+.contents {
+  margin-top: 87px; }
+  .contents .cont-subVisual {
+    margin-bottom: 20px;
+    padding-top: 70px;
+    box-sizing: border-box;
+    color: #fff;
+    height: 166px;
+    background: url(http://design.autopay.co.kr/joon/koresco-chiak/common/subVisual.jpg) no-repeat center; }
+    .contents .cont-subVisual h2 {
+      letter-spacing: -0.7px; }
+      .contents .cont-subVisual h2 .row > * {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle; }
+      .contents .cont-subVisual h2 .dot-l {
+        width: 3px;
+        height: 32px;
+        margin-right: 12px;
+        background: #fff; }
+      .contents .cont-subVisual h2 strong {
+        font-size: 34px;
+        font-weight: 700; }
+      .contents .cont-subVisual h2 .s-1 {
+        font-size: 14px;
+        padding-left: 17px; }
 
 /*해더영역*/
 .header {
-  position: absolute;
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 86px;
   border-bottom: 1px solid #cecece;
-  z-index: 99; }
+  z-index: 99;
+  background: #fff; }
   .header .cont-header {
     width: auto;
     padding: 32px 0 0 32px; }
