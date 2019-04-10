@@ -11,9 +11,9 @@
 @import url(http://static.go.co.kr/css/faq_m-v1.1.css);
 
 body {
-	font-family: $nnrSquare; 
-	line-height: 1.3; 
-	letter-spacing: -0.3px; 
+	font-family: $nnrSquare;
+	line-height: 1.3;
+	letter-spacing: -0.3px;
 	color: #000;
 }
 img {
@@ -89,7 +89,7 @@ $faq-color: #0086cd !important;
 }
 
 /*----------------------------------------------------------------------*/
-// 주의 
+// 주의
 // 예약페이지에서 가지고 오는 스타일이 .contents 에 영향을 받기 때문에 글로벌클래스로 스타일 주지않기
 // 예약페이지에서도 가지고오는 콘텐츠를 제외한 해더와 푸터는 별도로 다시 letter-spacing, line-height, font-family를 잡아준다
 %headerFooter {
@@ -170,7 +170,7 @@ input[type=password] {
 /*공통 서브비쥬얼*/
 .contents {
     margin-top:  49px;
-    
+
 	.cont-subVisual {
 		padding-top: 25px;
 		box-sizing: border-box;
@@ -218,7 +218,7 @@ input[type=password] {
     position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%; 
+	width: 100%;
 	height: 48px;
 	height: 148px;
 	border-bottom: 1px solid $bor-gray-1;
@@ -455,7 +455,7 @@ input[type=password] {
 				font-size: 11px;
 				text-transform: uppercase;
 			}
-			
+
 		}
 	}
 }
