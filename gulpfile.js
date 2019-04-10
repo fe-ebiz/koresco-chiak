@@ -129,7 +129,7 @@ gulp.task('sass', function() {
 		.pipe(browerSync.reload({stream: true}));
 });
 
-gulp.task('js', function(){
+gulp.task('js', function(){0
 	return gulp.src(config.js.src)
 		.pipe( plumber() )
 		.pipe( gulp.dest(config.js.dest) )

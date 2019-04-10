@@ -23,19 +23,19 @@ module.exports = function() {
 //			src       : source + '/sass/**/*.{scss,sass}',
 			src       : source + '/sass/**',
 			compassSrc: source + '/sass',
-			dest      : development + '/public/css'
+			dest      : development + '/static/css'
 		},
 
 		// Css 경로
 		css = {
 			src : source + '/css/**',
-			dest: development + '/public/css'
+			dest: development + '/static/css'
 		},
 
 		// JS 경로
 		js = {
 			src : source + '/js/**',
-			dest: development + '/public/js'
+			dest: development + '/static/js'
 		},
 
 		// Bower 설정
