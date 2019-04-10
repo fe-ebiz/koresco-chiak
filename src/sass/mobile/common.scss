@@ -223,7 +223,7 @@ input[type=password] {
 	/*left: 0;*/
     margin: 0 auto;
 	border-bottom: 1px solid $bor-gray-1;
-	z-index: 9991; //객실안내 페이지 인덱스가 9999라서 값 변경
+	z-index: 99991; //객실안내 페이지 인덱스가 9999라서 값 변경
     background: #fff;
 	.cont-header {
 		height: 100%;
