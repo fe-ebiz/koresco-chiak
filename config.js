@@ -1,94 +1,79 @@
-module.exports = function() {
+module.exports = function () {
 
-	var source       = 'src',
-		development  = 'dist',
-		bower_path   = 'bower_components',
-		remove       = ['.sass-cache', 'dist'],
+    var source = 'src',
+        development = 'dist',
+        test = 'test',
+        remove = ['.sass-cache', 'dist'],
 
-		// 템플릿 경로
-		template = {
-//			src  : source + '/jade/**/!(_)*.jade',
-//			parts: source + '/jade/**/_*.jade',
-//			dest : development + '/views'
-			src  : source + '/template/**/!(_)*.html',
-			parts: source + '/template/**/_*.html',
-			dest : development + '/views',
-			src_m  : source + '/template_m/**/!(_)*.html',
-			parts_m : source + '/template_m/**/_*.html',
-			dest_m : development + '/views_m'
-		},
+        // 템플릿 경로
+        template = {
+            src: source + '/template/**/!(_)*.html',
+            parts: source + '/template/**/_*.html',
+            dest: development + '/views',
+            src_m: source + '/template_m/**/!(_)*.html',
+            parts_m: source + '/template_m/**/_*.html',
+            dest_m: development + '/views_m',
+        },
 
-		// Sass 경로
-		sass = {
-//			src       : source + '/sass/**/*.{scss,sass}',
-			src       : source + '/sass/**',
-			compassSrc: source + '/sass',
-			dest      : development + '/static/css'
-		},
+        // Sass 경로
+        sass = {
+            src: source + '/assets/sass/**/!(_)*.{scss,sass}',
+            parts: source + '/assets/sass/**/_*.{scss,sass}',
+            dest: development + '/static/css'
+        },
 
-		// Css 경로
-		css = {
-			src : source + '/css/**',
-			dest: development + '/static/css'
-		},
+        // Css 경로
+        css = {
+            src: source + '/assets/css/**/*.css',
+            dest: development + '/static/css'
+        },
 
-		// JS 경로
-		js = {
-			src : source + '/js/**',
-			dest: development + '/static/js'
-		},
+        // JS 경로
+        js = {
+            src: source + '/assets/js/**/*.js',
+            dest: development + '/static/js'
+        },
 
-		// Bower 설정
-		bower = {
-			susy: {
-				src: bower_path + '/susy/sass/**',
-				dest: source + '/sass/susy'
-			},
-			breakpoint: {
-				src: bower_path + '/breakpoint-sass/stylesheets/**',
-				dest: source + '/sass/breakpoint'
-			},
-			fontawesome: {
-				src: bower_path + '/fontawesome/**',
-				dest: source + '/sass/fontawesome'
-			},
-			others: {
-				src: [
-					bower_path + '/**',
-					'!' + bower_path + '/{susy, susy/**}',
-					'!' + bower_path + '/{fontawesome, fontawesome/**}',
-					'!' + bower_path + '/{breakpoint-sass,breakpoint-sass/**}'
-				],
-				dest: development + '/js/libs'
-			}
-		},
+        // Img 경로
+        img = {
+            // src : source + '/assets/assets/img/**/*.{gif,jpg,png,ico}',
+            src: source + '/assets/img/**/!(sprite)*/*',
+            src_sprite: source + '/assets/img/**/sprite*/*',
+            dest: development + '/img',
+        },
+        // Img 경로
+        img_m = {
+            // src : source + '/assets/assets/img/**/*.{gif,jpg,png,ico}',
+            src: source + '/assets/img/m/**/!(sprite)*/*',
+            src_sprite: source + '/assets/img/m/**/sprite*/*',
+            dest: development + '/img/m',
+        },
 
-		// HTML Prettify 옵션
-		htmlPrettify = {
-			"indent_char": " ",
-			"indent_size": 4
-		},
+        // etc 경로
+        etc = {
+            src: source + '/assets/!(css|sass|js|img)/**',
+            dest: development + '/static',
+        },
 
-		// 웹 서버 설정
-		server = {
-			root: [development],
-			port: 90,
-			livereload: true,
-			open: {
-				browser: 'chrome' // chrome(안되면 Google Chrome), iexplore, ...
-			}
-		};
+        // HTML 옵션
+        htmlbeautify = {
+            "indentSize": 4
+        };
 
-	return {
-		del  : remove,
-		src  : source,
-		dev  : development,
-		rev  : remove,
-		sev  : server,
+    return {
+        del: remove,
+        src: source,
+        test: test,
+        dev: development,
 
-		bower: bower,
-		template : template,
-		sass : sass,
-		js   : js
-	};
+        template: template,
+        css: css,
+        sass: sass,
+        js: js,
+        img: img,
+        img_m: img_m,
+        etc: etc,
+
+        htmlbeautify: htmlbeautify
+    };
 };
